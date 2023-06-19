@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  api:
+    extends:
+      file: ./api/docker-compose.yml
+      service: api
+
+  db:
+    extends:
+      file: ./api/docker-compose.yml
+      service: db
+
+volumes:
+  db_data:
+  db_config:
