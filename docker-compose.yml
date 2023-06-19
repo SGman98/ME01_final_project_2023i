@@ -5,11 +5,24 @@ services:
     extends:
       file: ./api/docker-compose.yml
       service: api
+    environment:
+      - FRONT_URL=http://localhost:5173
 
   db:
     extends:
       file: ./api/docker-compose.yml
       service: db
+
+  front:
+    extends:
+      file: ./front/docker-compose.yml
+      service: front
+    environment:
+      - VITE_API_URL=http://localhost:8000/api/v1
+    depends_on:
+      - api
+    links:
+      - api
 
 volumes:
   db_data:

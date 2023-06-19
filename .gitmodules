@@ -1,3 +1,6 @@
 [submodule "api"]
 	path = api
 	url = https://github.com/SGman98/text_prediction_api.git
+[submodule "front"]
+	path = front
+	url = https://github.com/jzmendezl/text_prediction_front.git
