@@ -1,4 +1,4 @@
-# ME01_final_project_2023i
+# Final project ME01 (Modelos estocasticos)
 
 ## How to run
 
@@ -13,7 +13,7 @@
 1. Clone the repository
 
    ```bash
-   git clone --recursive https://github.com/SGman98/ME01_final_project_2023i
+   git clone --recursive https://github.com/SGman98/predictive_text_system.git
    ```
 
 2. Build the containers using docker-compose
